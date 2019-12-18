@@ -1,0 +1,152 @@
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.layout-header {
+    height: 100vh;
+    overflow: auto;
+    width: 30vw;
+    background: #00c6ff;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  */
+    background: linear-gradient(to top right, rgba(27, 150, 241, .9) 0, rgba(145, 234, 228, .9) 100%), url('../../assets/bg2.jpg') center center;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    color: #fff;
+}
+
+
+.header {
+    text-align: center;
+    min-height: fit-content;
+    /* overflow: auto; */
+}
+
+.layout-nav {
+    height: 35vh;
+    overflow: hidden;
+
+}
+
+.layout-social-nav {
+    height: 15vh;
+    overflow: hidden;
+
+}
+
+.header-name {
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    margin-bottom: .8rem;
+}
+
+.header-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-image {
+    width: 6.5rem;
+    height: 6.5rem;
+    /* background: #fff; */
+    border-radius: 50%;
+    margin: 2rem auto;
+    background: url('../../assets/mypic.jpg') center center;
+    background-size: cover;
+}
+
+.layout-content {
+    width: 70vw;
+    background: #f7f7f7;
+    padding: 2rem;
+    text-align: left;
+    overflow: auto;
+}
+
+@media (max-width: 720px) {
+    .layout {
+        display: block;
+        min-height: 100vh;
+    }
+
+    .layout-header {
+        width: 100vw;
+        height: fit-content;
+        overflow: hidden;
+    }
+   
+    .layout-content {
+        width: 100vw;
+        padding: 1rem;
+    }
+    .layout-nav{
+        display: none;
+    }
+    .layout-social-nav{
+        display: none;
+    }
+}
+
+.nav-item {
+    padding: .5rem 0 .5rem 0;
+    font-size: 1.2rem;
+    display: block;
+    cursor: pointer;
+   
+}
+.nav-item a{
+    color:#fff;
+}
+.active-link {
+    color: #00c6ff !important;
+
+}
+.header-dash {
+    margin: 2rem auto;
+    height: .1rem;
+
+    width: 30%;
+    background: #fff;
+
+}
+
+.nav {
+    /* height: calc(100% - 28rem); */
+}
+
+.social-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 20%;
+}
+
+.social-nav a {
+    color: #fff;
+}
+
+/* .social-nav .nav-item{
+    margin: 1rem ;
+} */
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #1b96f1 0, #91eae4 100%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

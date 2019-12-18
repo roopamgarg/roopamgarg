@@ -1,24 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import logo from "./logo.svg";
+import { BrowserRouter, Route } from "react-router-dom";
 
+import "./App.css";
+import "antd/dist/antd.css";
+import { DatePicker, Timeline, PageHeader } from "antd";
+import Layout from "./components/layouts/layout";
+import Experience from "./components/experience/experience";
+import About from "./components/about/about";
+import Project from "./components/projects/projects";
+import Contact from "./components/contact/contact";
+
+const renderData = () => {
+  if (window.innerWidth <= 800) {
+    return (
+      <Fragment>
+        <About />
+
+        <Experience />
+        <Project />
+        <Contact />
+      </Fragment>
+    );
+  } else {
+    return (
+      <Fragment>
+        <Route path="/" exact component={About} />
+
+        <Route path="/experience" exact component={Experience} />
+        <Route path="/projects" exact component={Project} />
+        <Route path="/contact" exact component={Contact} />
+      </Fragment>
+    );
+  }
+};
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Layout>
+        {renderData()}
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
