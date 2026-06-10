@@ -8,19 +8,6 @@ Currently at **Observe.AI** · Based in 🇮🇳 India · **Open to work**
 
 ---
 
-### 🔭 Featured Projects
-
-| Project | Description |
-| --- | --- |
-| [**DPP Protocol**](https://github.com/roopamgarg/delegated-payments-protocol) | Lets AI agents make payments on users' behalf with control, merchant trust, and audit trails |
-| [**StoryLens**](https://github.com/roopamgarg/StoryLens) | Converts stories into graphs to detect plot holes, inconsistencies, and logical gaps |
-| [**Webcam Tracker**](https://github.com/roopamgarg/webcam-usage-tracker) | Quietly tells you which apps are using your webcam — without touching your camera feed |
-| [**Cursor Agent SDK**](https://github.com/roopamgarg/cursor-agent-sdk) | Embeddable SDK for local Cursor agent interaction inside your project |
-
-🌐 [Portfolio](https://roopamgarg.in) · 📦 [All projects](https://github.com/roopamgarg?tab=repositories)
-
----
-
 ### 💼 Experience
 
 - **Software Engineer 2** @ Observe.AI *(2024 – Present)*
